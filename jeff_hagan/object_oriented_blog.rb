@@ -10,7 +10,30 @@
 # getters and setters for each of the three attributes. Do so inside the class
 # definition below.
 class Post
-  attr_accessor :title, :author, :body
+
+  def title=(submitted_title)
+    @title = submitted_title
+  end
+
+  def title
+    @title
+  end
+
+  def author=(submitted_author)
+    @author = submitted_author
+  end
+
+  def author
+    @author
+  end
+
+  def body=(submitted_body)
+    @body = submitted_body
+  end
+
+  def body
+    @body
+  end
 end
 
 # Next, we have a class that has already been created for us called `Author`.
@@ -18,7 +41,30 @@ end
 # typically have. You will need to create getters and setters for the following
 # three attributes: first_name, last_name and email.
 class Author
-  attr_accessor :first_name, :last_name, :email
+
+  def first_name=(submitted_first_name)
+    @first_name = submitted_first_name
+  end
+
+  def first_name
+    @first_name
+  end
+
+  def last_name=(submitted_last_name)
+    @last_name = submitted_last_name
+  end
+
+  def last_name
+    @last_name
+  end
+
+  def email=(submitted_email)
+    @email = submitted_email
+  end
+
+  def email
+    @email
+  end
 
   # Once the class is defined, create a method called `full_name` which uses
   # string interpolation to join together the first_name and last_name and
